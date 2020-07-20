@@ -208,7 +208,7 @@ nav label {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 900px), screen and (orientation: portrait) {
     header {
         background: none;
         background-color: #f5fcfd;
@@ -228,7 +228,7 @@ nav label {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px), screen and (orientation: portrait) {
     .lorem {
         max-width: 450px;
     }
@@ -239,7 +239,7 @@ nav label {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px), screen and (orientation: portrait) {
     .lorem {
         max-width: 300px;
     }
