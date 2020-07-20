@@ -1,0 +1,271 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    background: url(../img/bgHeader.png) no-repeat center top;
+    background-size: 100% 100%;
+    max-height: 1040px;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.container__header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 130px;
+    height: 80px;
+    background: #0f7bff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-right: 20px;
+}
+
+.logo__text {
+    padding: 25px 20px;
+    font-weight: 900;
+    color: #fff;
+    font-size: x-large;
+}
+
+.container__nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    margin-top: 32px;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+.btn__menu {
+    display: none;
+}
+
+nav label {    
+    display: none;
+}
+
+.menu li {
+    float: left;
+    display: block;
+    margin: 0 20px;
+}
+
+.menu li a{
+    color: #929292;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn__signUp { 
+    border: none; 
+    border-radius: 25px;
+    padding: 15px 50px;
+    margin-left: 20px;
+    margin-top: 19px;
+    background-color: #0063dd;
+    color: #fff;
+    align-self: baseline;
+    min-width: 152px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+}
+
+.container__btnTitles {
+    min-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn__blue { 
+    border: none; 
+    border-radius: 25px;
+    padding: 15px 50px;
+    background-color: #0f7bff;
+    color: #fff;
+    min-width: 152px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+}
+
+.btn__white {
+    border-style: solid;
+    border-color: #0f7bff;
+    border-radius: 25px;
+    padding: 15px 50px;
+    background-color: #f5fcfd;
+    color: #0f7bff;
+    min-width: 152px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+}
+
+.container__titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-weight: 900;
+    font-size: x-large;
+    margin-top: 100px;
+}
+
+.lorem {
+    margin: 35px 30px 40px 30px;
+    max-width: 615px;
+    text-align: center;
+    font-weight: 400;
+    color: #929292;
+}
+
+.bg__tlphn {
+    position: relative;
+    text-align: center;
+    top: 40px;
+}
+
+
+/* 2d block */
+.bg__blue {
+    background-color: #f5fcfd;
+    background-size: 100% 100%;
+    min-height: 630px;
+}
+
+.container__card {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-top: 165px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    background-size: 100% 100%;
+    width: 360px;
+    height: 300px;
+}
+
+.title__card {
+    font-weight: 500;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.icon__card {
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.card:nth-child(2) {
+    margin-top: 50px;
+}
+
+.icon__card img {
+    vertical-align: middle;
+}
+
+.icon__card:first-child {
+    background-color: #dfedff;
+}
+
+.icon__card:nth-child(2) {
+    background-color: #f5dfff;
+}
+
+.icon__card:last-child {
+    background-color: #dfffe3;
+}
+
+
+
+
+@media (max-width: 900px) {
+    header {
+        background: none;
+        background-color: #f5fcfd;
+        min-height: 500px;
+    }
+    .bg__tlphn {
+        display: none;
+    }
+    .container__card {
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+    .card {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .lorem {
+        max-width: 450px;
+    }
+
+    .card {
+        width: 275px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .lorem {
+        max-width: 300px;
+    }
+    nav label{
+        display: flex;     
+    }
+    nav {
+        display: flex;  
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 18px;
+    }
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 55px;
+    }
+    .menu li {
+        margin: 10px 4px 0 20px;
+    }
+    input[type="checkbox"]:checked ~ label + ul {
+        display: flex;  
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .container__btnTitles {
+        min-width: 350px;
+    }
+}
