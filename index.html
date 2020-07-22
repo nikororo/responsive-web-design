@@ -7,63 +7,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="container__header">
-                <div class="logo">
-                    <div class="logo__text">
-                        AppSon
-                    </div>
-                </div>
-                <div class="container__nav">
-                    <nav>
-                        <input type="checkbox" class="btn__menu" id="btn-menu" />
-                        <label for="btn-menu">
-                            <img src="https://img.icons8.com/color/48/000000/menu.png"/>
-                        </label>
-                        <ul class="menu">
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Feautures</a>
-                            </li>
-                            <li>
-                                <a href="#">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="#">Pages</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <button class="btn__signUp">SIGN UP</button>
+    <header id="home">
+        <div class="container__header" >
+            <div class="logo">
+                <div class="logo__text">
+                    AppSon
                 </div>
             </div>
-            <div class="container__titles">
-                <div class="title">
-                    Best Desktop App for You
-                </div>
-                <div class="lorem">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-                <div class="container__btnTitles">
-                    <button class="btn__blue">Download</button>
-                    <button class="btn__white">Free Trial</button>
-                </div>
+            <div class="container__nav">
+                <nav>
+                    <input type="checkbox" class="btn__menu" id="btn-menu" />
+                    <label for="btn-menu">
+                        <img src="https://img.icons8.com/color/48/000000/menu.png"/>
+                    </label>
+                    <ul class="menu">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#feautures">Feautures</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn__signUp">SIGN UP</button>
             </div>
-            <div class="bg__tlphn">
-                <img src="./img/tlphn.png">
-            </div>           
+        </div>
+        <div class="container__titles">
+            <div class="title">
+                Best Desktop App for You
+            </div>
+            <div class="lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="container__btnTitles">
+                <button class="btn__blue">Download</button>
+                <button class="btn__white">Free Trial</button>
+            </div>
+        </div>
+        <div class="bg__tlphn">
+            <img src="img/tlphn.png">
         </div>
     </header>
 
-    <section class="bg__blue">
-        <div class="container__card">
+    <section class="bg__blue" id="feautures">
+        <div class="container container__card">
             <div class="card">
                 <div class="icon__card">
                     <img src="./img/analys.png">
                 </div> 
-                <div class="title__card">
+                <div class="title">
                     Analysis
                 </div>
                 <div class="lorem">
@@ -72,9 +70,9 @@
             </div>
             <div class="card">
                 <div class="icon__card" >
-                    <img src="./img/diam.png">
+                    <img src="img/diam.png">
                 </div> 
-                <div class="title__card">
+                <div class="title">
                     Clean Design
                 </div>
                 <div class="lorem">
@@ -83,9 +81,9 @@
             </div>
             <div class="card">
                 <div class="icon__card">
-                    <img src="./img/messag.png">
+                    <img src="img/messag.png">
                 </div> 
-                <div class="title__card">
+                <div class="title">
                     Messaging
                 </div>
                 <div class="lorem">
@@ -94,9 +92,52 @@
             </div>
         </div>
     </section>
-    <section>
+
+    <section class="bg__rhombus">
         <div class="container">
-            
+            <div class="descr">
+                <div class="icon__descr1">
+                    <img src="img/3blockLeftImg.png">
+                </div>
+                <div class="descr__txt">
+                    <div class="title">
+                        Easy Messaging
+                    </div>
+                    <div class="lorem">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <a href="#">
+                        Reed more <img src="img/arrow.png">
+                    </a>
+                </div>
+            </div>
+            <div class="descr">
+                <div>
+                    <div class="title">
+                        Keep in Touch
+                    </div>
+                    <div class="lorem">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <a href="#">
+                        Reed more <img src="img/arrow.png">
+                    </a>
+                </div>
+                <div class="icon__descr2">
+                    <img src="img/3blockRightImg.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg__blue">
+        <div class="container hdiw">
+            <div class="title">
+                How Does it Works?
+            </div>
+            <div class="lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
+            </div>
         </div>
     </section>
 
