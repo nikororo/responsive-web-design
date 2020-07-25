@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "Quicksand"; 
+    src: url("../fonts/Quicksand-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "Quicksand"; 
+    src: url("../fonts/Quicksand-SemiBold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 600; 
+} 
+@font-face {
+    font-family: "Quicksand"; 
+    src: url("../fonts/Quicksand-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 700; 
+} 
+    
+
 body {
     padding: 0;
     margin: 0;
@@ -12,7 +32,7 @@ button {
     height: 50px;
     width: 165px;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 button:hover {
@@ -62,7 +82,7 @@ header {
 
 .logo__text {
     padding: 25px 20px;
-    font-weight: 900;
+    font-weight: 700;
     color: #fff;
     font-size: x-large;
 }
@@ -147,7 +167,7 @@ nav label {
 }
 
 .container__titles h1 {
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 100px;
     text-align: center;
 }
@@ -173,6 +193,36 @@ nav label {
 
 .bg__blue {
     background-color: #f5fcfd;
+}
+
+#feautures {
+    position: relative;
+}
+
+.scroll__down {
+    position: absolute;
+    margin-top: -35px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #dcdcdc;
+    background-color: #fff;
+    text-align: center;
+}
+
+.scroll__down img {
+    margin-top: 16px;
+}
+
+.scroll__down:hover {
+    border-color: #0354b8;
+}
+.scroll__down:active {
+    border-color: #013c83;
 }
 
 .container {
@@ -369,6 +419,7 @@ nav label {
 
 .pricing .container__btnTitles {
     min-width: 330px;
+    max-width: 330px;
 }
 
 .pricing .container__btnTitles .btn__blue {
@@ -562,7 +613,7 @@ input[type="radio"]:checked + label
 }
 
 .main__news .card {
-    min-height: 520px;
+    min-height: 300px;
     min-width: 555px;
     padding-bottom: 0;
 }
@@ -706,19 +757,18 @@ footer a:hover {
 .scroll__top {
     width: 45px;
     height: 45px;
-    color: #0f7bff;
     background-color: #fff;
     border-radius: 5px;
     margin-left: auto;
     margin-right: 20px;
 }
 
-.scroll__top a {
-    padding: 12px;
-    margin: 0;
+.scroll__top img {
+    padding: 11px 14px;
 }
-.scroll__top a:hover{
-    box-shadow: none;
+
+.scroll__top:hover{
+    box-shadow: inset -5px -7px #0354b8;
 }
 
 
@@ -766,6 +816,9 @@ a:hover {
     .pricing .card {
         width: 250px;
     }
+    .pricing .descr {
+        padding-right: 10px;
+    }
 
     .container__footer {
         margin: 0 auto;
@@ -809,7 +862,8 @@ a:hover {
     }
 
     .pages {
-        padding: 50px 0;
+        padding: 50px 20px;
+        width: auto;
     }
 
     .news {
@@ -832,11 +886,17 @@ a:hover {
         display: flex;  
         flex-direction: column;
         align-items: center;
-        padding-top: 0;
+        padding-top: 20px;
         padding-bottom: 50px;
     }
     .card {
         margin-top: 50px;
+        max-width: 500px;
+        width: auto;
+        height: auto;
+    }
+    .card .lorem {
+        margin-bottom: 0;
     }
 
     .descr {
@@ -868,7 +928,7 @@ a:hover {
         padding: 80px 0 50px;
     }
     .hdiw .lorem {
-        max-width: 300px;
+        max-width: 600px;
     }
     .hdiw .card {
         padding: 0;
@@ -879,6 +939,18 @@ a:hover {
 
     .pricing {
         padding-top: 50px;
+    }
+    .pricing .descr__txt {
+        width: auto;
+        max-width: 600px;
+    }
+    .pricing .container__btnTitles {
+        margin: 0 auto;
+    }
+    .pricing .card {
+        width: 300px;
+        height: auto;
+
     }
     
     .trust .container__card {
@@ -891,6 +963,10 @@ a:hover {
         margin-top: 50px;
         min-width: 300px;    
         height: 150px;
+    }
+
+    .pages .card {
+        margin-top: 0;
     }
 }
 
@@ -933,22 +1009,21 @@ a:hover {
     }
 
     .main__news .card {
-        min-height: 450px;
         min-width: 350px;
+    }
+    .main__news a {
+        margin-top: 20px;
     }
     .main__news h2 {
         padding-top: 10px;
     }
     .main__news .card img {
-        max-width: 350px;
-    }
-    .news .card {
-        padding: 0;
+        max-width: 410px;
     }
     .other__news .card {
         flex-direction: column;
         align-items: center;
-        min-height: 250px;
+        min-height: 230px;
         min-width: 300px;
     }
     .other__news img{
@@ -1016,16 +1091,11 @@ a:hover {
     }
 
     .trust .card {
-        max-width: 200px;
         min-width: 200px;
-        height: 200px;
-    }
-    .trust .lorem {
-        width: 200px;
+        min-height: 200px;
     }
 
     .main__news .card {
-        min-height: 450px;
         min-width: 300px;
     }
     .main__news .card img {
