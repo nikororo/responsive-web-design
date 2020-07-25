@@ -785,12 +785,12 @@ a:hover {
     }
 }
 
-@media (max-width: 1200px), (max-device-width: 15cm), (orientation: portrait) {
+@media (max-width: 1200px), (max-device-width: 15cm) {
     header .lorem {
         max-width: 450px;
     }
     .container__card {
-      margin: 0 20px;
+        margin: 0 20px;
     }
     .card {
         width: 275px;
@@ -872,7 +872,7 @@ a:hover {
     }
 }
 
-@media (max-width: 900px), (max-device-width: 12cm), (orientation: portrait) {
+@media (max-width: 900px), (max-device-width: 12cm) {
     header {
         background: none;
         background-color: #f5fcfd;
@@ -970,7 +970,7 @@ a:hover {
     }
 }
 
-@media (max-width: 600px), (max-device-width: 10cm), (orientation: portrait) {
+@media (max-width: 600px), (max-device-width: 10cm) {
     header {
         padding-bottom: 40px;
     }
@@ -1113,5 +1113,179 @@ a:hover {
     footer .links {
         display: flex;
         align-items: center;
+    }
+}
+
+@media (orientation: portrait) {
+    header {
+        background: none;
+        background-color: #f5fcfd;
+        padding-bottom: 60px;
+    }
+    nav label{
+        display: flex;     
+    }
+    nav {
+        display: flex;  
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 18px;
+        position: relative;
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 35px;
+    }
+    .menu li {
+        margin: 10px 4px 0 20px;
+    }
+    input[type="checkbox"]:checked ~ label + ul {
+        display: flex;  
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .scroll__down {
+        margin-top: -50px;
+    }
+    .bg__tlphn {
+        display: none;
+    }
+
+    .container__card {
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    header .lorem {
+        max-width: none;
+    }
+    
+    .card {
+        margin: 25px 20px;
+        width: auto;
+        height: auto;
+        max-width: none;
+    }
+    .card .lorem {
+        margin-bottom: 0;
+    }
+
+    .lorem {
+        max-width: none;
+    }
+
+    .bg__rhombus {
+        background: none;
+        background-color: #fff;
+        min-height: auto;
+    }
+
+    .descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .descr:first-child {
+        padding-right: 0;
+    }
+    .descr:last-child {
+        padding-left: 0;
+        flex-direction: column-reverse;
+    }
+
+    .hdiw {
+        padding: 80px 0 50px;
+    }
+    .hdiw .lorem {
+        max-width: none;
+    }
+    .hdiw .card {
+        padding: 0;
+    }
+    .hdiw .container__card::before {
+        border: none;
+    }
+
+    .pricing .lorem {
+        width: auto;
+    }
+    .pricing .descr__txt {
+        width: auto;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .pricing .container__btnTitles {
+        margin: 0 auto;
+    }
+    .pricing .card {
+        min-width: 300px;
+    }
+
+    .bg__trust {
+        display: none;
+    }
+    .trust {
+        margin-left: auto;
+        text-align: center;
+    }
+    .trust .card {
+        height: auto;
+        margin: 15px;
+    }
+    .trust .container__card {
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .free {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .free .btn__blue {
+        margin-left: 0;
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .subscribe button {
+        min-width: 100px;
+    }
+
+    footer .copy {
+        padding: 0 20px;
+        text-align: center;
+    }
+    .container__footer {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .copy {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .scroll__top {
+        margin: 0;
+    }
+    .social {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    footer .links {
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 }
