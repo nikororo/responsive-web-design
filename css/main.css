@@ -414,7 +414,6 @@ nav label {
 .pricing .descr__txt {
     padding-left: 0;
     width: 330px;
-    max-height: 300px;
 }
 
 .pricing .container__btnTitles {
@@ -591,7 +590,7 @@ input[type="radio"]:checked + label
 .other__news .card{
     display: flex;
     min-width: 530px;
-    height: 120px;
+    height: auto;
     padding: 40px 0 0;
 }
 
@@ -1046,77 +1045,32 @@ a:hover {
     }
 }
 
-@media (max-width: 450px), (max-device-width: 7cm) {
+@media (orientation: portrait) {
     button {
-        width: 150px;
+        font-size: 1.2em;
     }
-    
-    .container__header {
-        flex-direction: column;
-        height: 80px;
+    body, .card h2, .trust__title h2 {
+        font-size: 1.4em;
+    }
+    h2, .logo__text, .main__news h2, .price {
+        font-size: 1.5em;
+    }
+    .container__sub input::-webkit-input-placeholder {
+        font-size: 1.4em;
+    }
+    .container__sub input::-moz-placeholder {
+        font-size: 1.4em;
+    } 
+    .price small {
+        font-size: 0.7em;
     }
     .logo {
-        display: none;
+        width: 160px;
     }
-    .container__nav {
-        justify-content: space-around;
-    }
-    nav {
-        align-items: flex-start;
-    }
-    .menu li {
-        margin: 10px 0 0 4px;
-    }
-    input[type="checkbox"]:checked ~ label + ul {
-        align-items: flex-start;
-    }
-    .container__btnTitles {
-        min-width: 305px;
+    .social svg {
+        height: 40px;
     }
     
-    .icon__descr {
-        height: 300px;
-        min-width: 300px;
-    }
-    .icon__descr img {
-        margin-top: 25px;
-        height: 250px;
-    }
-
-    .pricing .descr__txt {
-        width: 300px;
-    }
-    .pricing .container__btnTitles {
-        min-width: 300px;
-    }
-
-    .trust .card {
-        min-width: 200px;
-        min-height: 200px;
-    }
-
-    .main__news .card {
-        min-width: 300px;
-    }
-    .main__news .card img {
-        max-width: 300px;
-    }
-
-    .subscribe button {
-        width: 100px;
-    }
-
-    footer .copy {
-        padding: 0 20px;
-        text-align: center;
-    }
-    footer .links {
-        display: flex;
-        align-items: center;
-    }
-}
-
-@media (orientation: portrait) {
     header {
         background: none;
         background-color: #f5fcfd;
@@ -1248,15 +1202,19 @@ a:hover {
         flex-direction: column;
         align-items: center;
     }
+    
+    .main__news .lorem {
+        margin-bottom: 20px;
+    }
 
     .free {
         display: flex;
         flex-direction: column;
-        padding: 50px 0;
+        padding: 50px 10px;
     }
     .free .btn__blue {
         margin-left: 0;
-        width: 150px;
+        width: 250px;
         margin-top: 20px;
     }
 
@@ -1287,5 +1245,79 @@ a:hover {
     footer .links {
         margin-left: 0;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 450px), (max-device-width: 7cm) {
+    button {
+        width: 150px;
+    }
+    
+    .container__header {
+        flex-direction: column;
+        height: 80px;
+    }
+    .logo {
+        display: none;
+    }
+    .container__nav {
+        justify-content: space-around;
+    }
+    nav {
+        align-items: flex-start;
+    }
+    .menu li {
+        margin: 10px 0 0 4px;
+    }
+    input[type="checkbox"]:checked ~ label + ul {
+        align-items: flex-start;
+    }
+    .container__btnTitles {
+        min-width: 310px;
+    }
+    header button {
+        min-width: 155px;
+    }
+    
+    .icon__descr {
+        height: 300px;
+        min-width: 300px;
+    }
+    .icon__descr img {
+        margin-top: 25px;
+        height: 250px;
+    }
+
+    .pricing .descr__txt {
+        width: 300px;
+    }
+    .pricing .container__btnTitles {
+        min-width: 300px;
+    }
+
+    .trust .card {
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .main__news .card {
+        min-width: 300px;
+    }
+    .main__news .card img {
+        max-width: 300px;
+    }
+
+    .subscribe button {
+        font-size: large;
+        width: 100px;
+    }
+
+    footer .copy {
+        padding: 0 20px;
+        text-align: center;
+    }
+    footer .links {
+        display: flex;
+        align-items: center;
     }
 }
