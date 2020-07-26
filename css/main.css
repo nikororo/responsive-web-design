@@ -994,6 +994,9 @@ a:hover {
     .menu li {
         margin: 10px 4px 0 20px;
     }
+    .container__titles h1 {
+        margin-top: 120px;
+    }
     input[type="checkbox"]:checked ~ label + ul {
         display: flex;  
         flex-direction: column;
@@ -1045,32 +1048,7 @@ a:hover {
     }
 }
 
-@media (orientation: portrait) {
-    button {
-        font-size: 1.2em;
-    }
-    body, .card h2, .trust__title h2 {
-        font-size: 1.4em;
-    }
-    h2, .logo__text, .main__news h2, .price {
-        font-size: 1.5em;
-    }
-    .container__sub input::-webkit-input-placeholder {
-        font-size: 1.4em;
-    }
-    .container__sub input::-moz-placeholder {
-        font-size: 1.4em;
-    } 
-    .price small {
-        font-size: 0.7em;
-    }
-    .logo {
-        width: 160px;
-    }
-    .social svg {
-        height: 40px;
-    }
-    
+@media (orientation: portrait) {   
     header {
         background: none;
         background-color: #f5fcfd;
@@ -1093,6 +1071,9 @@ a:hover {
     }
     .menu li {
         margin: 10px 4px 0 20px;
+    }
+    .container__titles h1 {
+        margin-top: 120px;
     }
     input[type="checkbox"]:checked ~ label + ul {
         display: flex;  
